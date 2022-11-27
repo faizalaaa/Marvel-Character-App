@@ -5,7 +5,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 
 export const Creator = () => {
-  const [url,setUrl]=useState("http://gateway.marvel.com/v1/public/creators?ts=1&apikey=0577b337b43ba2a4a30291358e0dd50b&hash=f2008e55dcdd0827126e388784ce19d4")
+  const [url,setUrl]=useState("https://gateway.marvel.com/v1/public/creators?ts=1&apikey=80dfed77f24f958fd4470b46a09a8b9e&hash=193b6884626d38741587cced90b83d35")
   const [itemCreator,setItem]=useState();
   const [search,setSearch]=useState("");
   useEffect(()=>{
@@ -17,7 +17,7 @@ export const Creator = () => {
   },[url])
   
   const searchCreator=()=>{
-    setUrl(`https://gateway.marvel.com:443/v1/public/creators?nameStartsWith=${search}&ts=1&apikey=0577b337b43ba2a4a30291358e0dd50b&hash=f2008e55dcdd0827126e388784ce19d4`)
+    setUrl(`https://gateway.marvel.com:443/v1/public/creators?nameStartsWith=${search}&ts=1&apikey=80dfed77f24f958fd4470b46a09a8b9e&hash=193b6884626d38741587cced90b83d35`)
   }
 
   return (
